@@ -178,114 +178,59 @@ input {
 #footer .address {
     padding-bottom: 12px;
 }
-
-/*---------- detail(상세페이지) ----------*/
-
-#detail main h1 {
+/* --------------------process------------------------- */
+#process .container {
     width: 100%;
-    background: #7FC241;
+}
+
+/* h1(탭 제목) CSS 스타일 모든 페이지 동일하게 적용 (bg-color만 변경) */
+#process .container h1 {
     font-size: 20px;
-    color: #fff;
+    background-color: var(--main-color);
+    color: var(--bg-color03);
+    height: 45px;
     text-align: center;
-    padding-top: 13px;
-    padding-bottom: 14px;
-}
-
-#detail main figure img {
-    width: calc(100% - 40px);
-    margin: 20px;
-}
-
-#detail main .container {
-    background-color: #f4f4f4;
-    margin: 20px;
-    margin-top: 0;
-    padding: 10px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
-
-#detail main .container .date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 12px;
-    padding-top: 5px;
-}
-
-#detail main .container .date span {
-    background: #fff;
-    border: 1px solid #7FC241;
-    border-radius: 16px;
-    padding: 2px 6px;
-    margin-right: 12px;
-}
-
-#detail main .container table {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 96px;
-    border-radius: 16px;
-    background-color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#detail main .container table .info1 {
-    border-radius: 16px 0px 0px 0px;
-    text-align: center;
-}
-
-#detail main .container table .info2 {
-    border-radius: 0px 0px 0px 16px;
-    text-align: center;
-}
-
-#detail main .container table  th {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #7FC241;
-    color: #fff;
-    padding: 15px 20px;
-}
-
-#detail main .container table td {
-    padding: 15px 31px;
-}
-
-#detail main .container .text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 14px;
     font-weight: 400;
 }
 
-#detail main .adopt-btn {
+/* tap-bar */
+#process .tap-bar {
     display: flex;
-    flex-direction: row;
+    justify-content:center;
+    margin: 15px 0px 8px 0px;
+}
+
+/* main */
+#process ul {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background: #7FC241;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    position: relative;
-    left: calc(50% - 111px/2 + 0.5px);
-    top: calc(50% - 36px/2 + 222px);
-    margin-bottom: 50px;
+    /* white-space: pre-line; */
 }
 
-#detail main .adopt-btn .adopt-btn-detail {
-    color: #fff;
+#process ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 280px;
+    height: 64px;
+    text-align: center;
+    margin: 12px 0px;
+}
+
+#process ul li span {
     font-weight: 700;
-    font-size: 14px;
-    padding: 9px 15px;
 }
 
+#process ul li:nth-child(odd) {
+    border: 1px solid #EF5797;
+}
 
+#process ul li:nth-child(even) {
+    border: 1px solid #000000;
+}
 
-
+#process ul li:last-child {
+    margin-bottom: 40px;
+}

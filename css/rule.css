@@ -16,12 +16,12 @@
 }
 
 
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    background-color: var(--bg-color03);
-    color: var(--text-color);
+ body {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: var(--bg-color03);
+        color: var(--text-color);
 }
 
 input {
@@ -49,6 +49,7 @@ input {
     width: 100px;
 }
 
+
 /*헤더 버튼*/
 #icon-menu button {
     border-style: none;
@@ -57,6 +58,11 @@ input {
     width: var(--header-height);
     height: var(--header-height);
 }
+
+
+
+
+
 
 
 /*gnb*/
@@ -114,6 +120,7 @@ input {
     font-weight: 400;
 }
 
+
 /*닫기 버튼*/
 #btn-close {
     position: absolute;
@@ -130,6 +137,12 @@ input {
 #btn-close .bi {
     font-size: 50px;
 }
+
+
+
+
+
+
 
 
 
@@ -171,6 +184,7 @@ input {
     padding-bottom: 12px;
 }
 
+
 #footer .sns-link {
     padding-bottom: 23px;
 }
@@ -179,113 +193,101 @@ input {
     padding-bottom: 12px;
 }
 
-/*---------- detail(상세페이지) ----------*/
 
-#detail main h1 {
+
+
+
+
+
+
+
+
+/* rules main */
+
+/*이용수칙 h1*/
+#rules .container {
     width: 100%;
-    background: #7FC241;
+
+}
+
+#rules .container h1 {
     font-size: 20px;
-    color: #fff;
+    background-color: var(--sub-color02);
+    color:#fff;
+    height: 45px;
     text-align: center;
-    padding-top: 13px;
-    padding-bottom: 14px;
-}
-
-#detail main figure img {
-    width: calc(100% - 40px);
-    margin: 20px;
-}
-
-#detail main .container {
-    background-color: #f4f4f4;
-    margin: 20px;
-    margin-top: 0;
-    padding: 10px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
-
-#detail main .container .date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 12px;
-    padding-top: 5px;
-}
-
-#detail main .container .date span {
-    background: #fff;
-    border: 1px solid #7FC241;
-    border-radius: 16px;
-    padding: 2px 6px;
-    margin-right: 12px;
-}
-
-#detail main .container table {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 96px;
-    border-radius: 16px;
-    background-color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#detail main .container table .info1 {
-    border-radius: 16px 0px 0px 0px;
-    text-align: center;
-}
-
-#detail main .container table .info2 {
-    border-radius: 0px 0px 0px 16px;
-    text-align: center;
-}
-
-#detail main .container table  th {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #7FC241;
-    color: #fff;
-    padding: 15px 20px;
-}
-
-#detail main .container table td {
-    padding: 15px 31px;
-}
-
-#detail main .container .text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 14px;
+    padding-top: 6px;
     font-weight: 400;
 }
 
-#detail main .adopt-btn {
+
+/*카테고리*/
+#rules .category-menu {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #7FC241;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    position: relative;
-    left: calc(50% - 111px/2 + 0.5px);
-    top: calc(50% - 36px/2 + 222px);
-    margin-bottom: 50px;
+    overflow: scroll;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    justify-content: center;
+  }
+  
+#rules .category-menu a {
+    white-space: nowrap;
+    margin-right: 5px;
+    color: var(--text-color);
+  }
+
+#rules .category-menu span {
+    color: #999999;
 }
 
-#detail main .adopt-btn .adopt-btn-detail {
-    color: #fff;
+#rules .rules img {
+    width: 100%;
+}
+
+/*경고*/
+
+/*경고 상단 텍스트*/
+#rules .warn h2 {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    color: var(--sub-color02);
+    font-size: 16px;
     font-weight: 700;
-    font-size: 14px;
-    padding: 9px 15px;
+    text-align: center;
 }
 
+/*경고 정렬*/
+#rules .warn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+#rules .warn span {
+    color: var(—sub-color02);
+}
 
+#rules .warn p {
+    padding-top: 13px;
+}
 
+/*경고 이미지박스 디테일*/
+#rules .warn-box-01, .warn-box-02 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 223px;
+    height: 223px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 33px;
+
+}
+
+/*이미지박스 사이 여백*/
+#rules .warn-box-01 {
+    margin-bottom: 33px;
+}
