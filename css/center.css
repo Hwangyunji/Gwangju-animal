@@ -32,7 +32,7 @@
 #center .intro h3 {
     font-weight: 700;
     font-size: 18px;
-    color: #4E88C7;
+    color: #71A600;
     padding-bottom: 10px;
 }
 #center .intro p {
@@ -70,6 +70,6 @@
 /* hover */
 
 #center .container p a:hover {
-    color: #4E88C7;
+    color: #71A600;
     font-weight: 700;
 }

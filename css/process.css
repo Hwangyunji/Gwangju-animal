@@ -60,7 +60,7 @@
 }
 
 #process main ul .pink {
-    border: 1px solid #EF5797;
+    border: 1px solid #71A600;
 }
 
 #process main ul .gray {
@@ -69,6 +69,6 @@
 
 /* hover */
 #process .container p a:hover {
-    color: #EF5797;
+    color: #71A600;
     font-weight: 700;
 }
