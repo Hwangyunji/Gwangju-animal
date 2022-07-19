@@ -1,12 +1,11 @@
-# seocho-animal-mobile
-https://hwangyunji.github.io/seocho-animal-mobile/
+# 광주동물보호소
+https://hwangyunji.github.io/Gwangju-animal/
 
 # 기존 사이트
-https://seocho.go.kr/site/animal/main.do
+http://www.kcanimal.or.kr/default.asp
 
-# 브랜드 소개
-- 서초동물사랑센터는 유기·유실 동물을 줄이고 올바른 반려동물 문화를 조성하기 위해 설립되었습니다.
-- 유실∙유기견의 반환 및 입양을 돕는 입양센터이자 반려견 기초교육 프로그램을 제공하는 교육센터입니다.
+# 사이트 소개
+- 동물보호법과 광주광역시 동물보호조례에 의하여 광주광역시에서 유기동물의 생명과 안전을 적정하게 보호, 관리하여 생명 존중과 시민의 생명존중에 대한 정서함양에 이바지하기 위하여 설립되었습니다.
 
 # 제작 목표
 - 카테고리 간소화(불필요한 카테고리 메뉴 삭제/수정)을 포함한 메뉴 개선

@@ -9,9 +9,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 :root {
-    --main-color: #EF5797;
-    --sub-color01: #7FC241;
-    --sub-color02: #4E88C7;
+    --main-color: #71A600;
+    --sub-color01: #71A600;
+    --sub-color02: #71A600;
     --text-color: #000000;
     --bg-color01: #999999;
     --bg-color02: #F4F4F4;
@@ -253,10 +253,17 @@ main .title h3 {
 
 /* 보호동물사진 이용시간사진*/
 #main .main-info {
-    display: flex;
-    flex-direction: column;
     margin: 20px;
     margin-top: 30px;
+}
+#main .main-info h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+#main .main-info dl {
+    display: block;
+    outline: 1px solid red;
 }
 
 /*-----------------------footer--------------------------*/
@@ -300,9 +307,7 @@ main .title h3 {
 /*줄 사이 간격*/
 #footer .footer-menu {
     padding-bottom: 12px;
-}
-
-
-#footer .address {
-    padding-bottom: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
 }
