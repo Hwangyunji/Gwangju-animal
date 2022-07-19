@@ -1,0 +1,308 @@
+@import url('reset.css');
+@import url('notice.css');
+@import url('detail.css');
+@import url('process.css');
+@import url('rules.css');
+@import url('center.css');
+@import url('map.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+:root {
+    --main-color: #EF5797;
+    --sub-color01: #7FC241;
+    --sub-color02: #4E88C7;
+    --text-color: #000000;
+    --bg-color01: #999999;
+    --bg-color02: #F4F4F4;
+    --bg-color03: #fff;
+    --header-height: 55px;
+    --footer-height: 200px;
+}
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--bg-color03);
+    color: var(--text-color);
+}
+
+input,
+button {
+    cursor: pointer;
+}
+
+.bi {
+    font-size: 40px;
+}
+
+/*------------------------header----------------------*/
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*로고*/
+#main-header h1 {
+    padding-top: 12px;
+    padding-left: 15px;
+}
+
+#main-header h1 img {
+    width: 100px;
+}
+
+
+/*헤더 버튼*/
+#icon-menu button {
+    border-style: none;
+    background-color: var(--main-color);
+    color: #fff;
+    width: var(--header-height);
+    height: var(--header-height);
+}
+
+/*------------------------gnb---------------------------*/
+#gnb {
+    background: #fff;
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition-duration: 0.4s;
+    z-index: 999;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+
+#gnb.on {
+    transform: translateX(0%);
+    /*gnb켜지면 메인 어두워지게(추후수정)*/
+}
+
+#gnb a:hover {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+/*gnb detail menu*/
+#gnb ul {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+}
+
+#gnb ul li {
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#gnb ul li a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/*닫기 버튼*/
+#btn-close {
+    position: absolute;
+    background-color: var(--main-color);
+    color: var(--bg-color03);
+    right: 0px;
+    top: 0px;
+    width: var(--header-height);
+    height: var(--header-height);
+    border-style: none;
+    text-decoration: none;
+}
+
+#btn-close .bi {
+    font-size: 50px;
+}
+
+/* --------------------index(main)-------------------------- */
+#main {
+    width: 100%;
+}
+
+#main main {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+
+/* 서초동물사랑센터 - 리트리버*/
+#main .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    color: var(--bg-color03);
+    background-image: url(../images/main-title-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--bg-color03);
+    margin-bottom: 30px;
+}
+
+#main main h1 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#main main h2 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#main .kakao {
+    position: fixed;
+    right: 10px;
+    /* margin-left: calc(50% - 10px); */
+    bottom: 50px;
+    z-index: 999;
+}
+
+#main .kakao img {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* 자세히 보기 */
+main .title h3 {
+    margin-top: 30px;
+    padding: 6px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* 보호동물 */
+#main .protection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+#main .protection h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* 더보기+ */
+#main .add-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: #fff;
+    width: 66px;
+    height: 30px;
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+#main .swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#main .swiper-slide img {
+    width: 100%;
+}
+
+#main .swiper-slide p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 14px;
+}
+
+#main .swiper .swiper-button-prev {
+    color: var(--bg-color03);
+    margin-left: 20px;
+}
+
+#main .swiper .swiper-button-next {
+    color: var(--bg-color03);
+    margin-right: 20px;
+}
+
+/* 보호동물사진 이용시간사진*/
+#main .main-info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+/*-----------------------footer--------------------------*/
+
+#footer {
+    width: 100%;
+    height: var(--footer-height);
+    background: var(--bg-color01);
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer .footer-sns {
+    padding-bottom: 23px;
+}
+
+/*글자 굵기*/
+#footer .footer-menu a {
+    font-weight: 500;
+}
+
+/*아이콘 사이 여백*/
+#footer .bi {
+    font-size: 24px;
+    margin-left: 0.5em;
+}
+
+/*줄 사이 간격*/
+#footer .footer-menu {
+    padding-bottom: 12px;
+}
+
+
+#footer .address {
+    padding-bottom: 12px;
+}

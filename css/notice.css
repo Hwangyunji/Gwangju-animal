@@ -1,404 +1,125 @@
-@import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
-
-:root {
-    --main-color: #EF5797;
-    --sub-color01: #7FC241;
-    --sub-color02: #4E88C7;
-    --text-color: #000000;
-    --bg-color01: #999999;
-    --bg-color02: #F4F4F4;
-    --bg-color03: #fff;
-    --header-height: 55px;
-    --footer-height: 200px;
-   --footer-height: 200px;
-}
-
-
- body {
-        font-family: 'Noto Sans KR', sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        background-color: var(--bg-color03);
-        color: var(--text-color);
-}
-
-input {
-    cursor: pointer;
-}
-
-.row {
-    display: flex;
-}
-
-.bi {
-    font-size: 40px;
-}
-
-/*header*/
-
-#main-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-/*로고*/
-#main-header h1 {
-    padding-top: 12px;
-    padding-left: 15px;
-}
-
-#main-header h1 img {
-    width: 100px;
-}
-
-/*헤더 버튼*/
-#icon-menu button {
-    border-style: none;
-    background-color: var(--main-color);
-    color: #fff;
-    width: var(--header-height);
-    height: var(--header-height);
-}
-
-
-/*gnb*/
-
-#gnb {
-    display: none;
-    background: #fff;
-    position: fixed;
-    width: 80%;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    /* transform: translateX(100%);
-    transition-duration: 0.8s;
-    z-index: 999; 
-    (자바스크립트 짜면 주석 삭제)*/
-}
-
-#gnb.on {
-    transform: translateX(0%);
-    /*gnb켜지면 메인 어두워지게(추후수정)*/
-}
-
-#gnb a:hover {
-    color:#EF5797;
-}
-
-#gnb a {
-    color: #000000;
-    line-height: 40px;
-    font-size: 16px;
-}
-
-/*gnb detail menu*/
-#gnb ul {
-    position: absolute;
-    width: 100%;
-    top: 51px;
-    font-size: 16px;
-    color: #000;
-  }
-
-#gnb ul li {
-    border-bottom: 1px solid rgb(200, 200, 200);
-}
-
-#gnb ul li a {
-    color: #333;
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-weight: 400;
-}
-
-/*닫기 버튼*/
-#btn-close {
-    position: absolute;
-    background-color: var(--main-color);
-    color:#fff;
-    right: 0px;
-    top: 0px;
-    width: var(--header-height);
-    height: var(--header-height);
-   border-style: none;
-   text-decoration: none;
-}
-
-#btn-close .bi {
-    font-size: 50px;
-}
-
-
-
-/*footer*/
-
-#footer {
-    width: 100%;
-    height: var(--footer-height);
-    background: var(--bg-color01);
-    color: #fff;
-    font-size: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    /* position: absolute;
-    bottom: 0; */
-}
-
-#footer a {
-    color: #fff;
-}
-
-/*글자 굵기*/
-#footer .footer-menu a {
-    font-weight: 500;
-}
-
-/*아이콘 사이 여백*/
-#footer .bi {
-    font-size: 24px;
-    margin-left: 0.5em;
-}
-
-/*줄 사이 간격*/
-#footer .footer-menu {
-    padding-bottom: 12px;
-}
-
-#footer .sns-link {
-    padding-bottom: 23px;
-}
-
-#footer .address {
-    padding-bottom: 12px;
-}
-
-
-
-
-
-
-
-
-
-
-/* rules main */
-
-/*이용수칙 h1*/
-#rules .container {
-    width: 100%;
-
-}
-
-#rules .container h1 {
-    font-size: 20px;
-    background-color: var(--sub-color02);
-    color:#fff;
-    height: 45px;
-    text-align: center;
-    padding-top: 6px;
-    font-weight: 400;
-}
-
-
-/*카테고리*/
-#rules .category-menu {
-    display: flex;
-    overflow: scroll;
-    margin-top: 23px;
-    margin-bottom: 23px;
-    justify-content: center;
-  }
-  
-#rules .category-menu a {
-    white-space: nowrap;
-    margin-right: 5px;
-    color: var(--text-color);
-  }
-
-#rules .category-menu span {
-    color: #999999;
-}
-
-#rules .rules img {
-    width: 100%;
-}
-
-/*경고*/
-
-/*경고 상단 텍스트*/
-#rules .warn h2 {
-    margin-top: 22px;
-    margin-bottom: 22px;
-    color: var(--sub-color02);
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-}
-
-/*경고 정렬*/
-#rules .warn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#rules .warn span {
-    color: var(--sub-color02);
-}
-
-#rules .warn p {
-    padding-top: 13px;
-}
-
-/*경고 이미지박스 디테일*/
-#rules .warn-box-01, .warn-box-02 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 223px;
-    height: 223px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 33px;
-
-}
-
-/*이미지박스 사이 여백*/
-#rules .warn-box-01 {
-    margin-bottom: 33px;
-}
-
-
-
-
-
-
-/*notice*/
-
+/*--------------------------notice----------------------------*/
 /*입양공고*/
 
 #notice .container {
-    width: 100%;
+    text-align: center;
 }
-
 
 #notice .container h1 {
-    font-size: 20px;
-    background-color: var(--sub-color01);
-    color:#fff;
-    height: 45px;
-    text-align: center;
-    padding-top: 6px;
-    font-weight: 400;
-}
-
-/*카테고리메뉴*/
-#notice .category-menu {
     display: flex;
-    padding-left: 20px;
-    margin-top: 20px;
+    align-items: center;
     justify-content: center;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--sub-color01);
+    color: var(--bg-color03);
 }
 
-#notice .category-menu a {
+#notice .container p {
+    padding-top: 15px;
+}
+#notice .container a {
     color: var(--text-color);
 }
-
-#notice-board {
-    display: flex;
-    justify-content: center;
-    margin: 23px;
-    background: rgb(236, 236, 236);
-    padding-top: 8px;
-    padding-bottom: 8px;
+#notice .container a:nth-child(3) {
+    color: var(--sub-color01);
+    font-weight: 700;
+}
+#notice .container span {
+    color: var(--bg-color01);
 }
 
 /*보드메뉴*/
-
-#notice-board ul {
+#notice .board ul {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--bg-color02);
+    margin: 20px;
+    padding: 8px 20px;
+/* outline: 1px solid red; */
 }
 
-#notice-board ul li {
-    width: 55px;
-    border-radius: 10px;
-    margin-left: 23px;
+#notice .board ul li {
+    border-radius: 5px;
     text-decoration: none;
     text-align: center;
     font-size: 12px;
+    padding: 2px 8px;
+    /* outline: 1px solid green; */
 }
 
-#notice-board ul li a {
+#notice .board ul li a {
     color: var(--text-color);
+    /* outline: 1px solid blue; */
 }
 
-#notice-board ul li:first-child {
+#notice .board ul li:first-child {
     background-color: var(--sub-color01);
-    outline: 2px solid #fff;
 }
 
-#notice-board ul a:hover {
+#notice .board ul li:first-child a {
+    color: var(--bg-color03);
+    font-weight: 700;
+}
+
+#notice .board ul a:hover {
     color: var(--sub-color01);
 }
 
-
 /*강아지 이미지*/
-.row {
+#notice .puppies {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px 30px;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 30px;
+    gap: 15px;
+    /* outline: 1px solid red; */
+}
+
+#notice .puppy {
+    width: calc(50% - 10px);
+    /* outline: 1px solid green; */
 }
 
 #notice .puppy img {
-    height: 130px;
+    width: 100%;
+    /* outline: 1px solid blue; */
 }
 
 #notice .puppy .puppy-state {
     text-align: center;
     color: var(--sub-color01);
+    font-weight: 700;
+    /* outline: 1px solid orange; */
 }
-
-#notice .main {
-    margin-bottom: 30px;
-}
-
 
 /*페이지버튼*/
-
 #button-page {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-    
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
 }
 
 #button-page .notice-page-btn {
-    margin-left: 12px;
-    width: 28px;
-    height: 28px;
-    background: transparent;
-    border: 1px solid var(—sub-color01);
+    width: 30px;
+    height: 30px;
+    background: var(--bg-color03);
+    border: 1px solid var(--sub-color01);
 }
 
 #button-page .notice-page-btn a {
-    color: var(—text-color);
+    color: var(--text-color);
 }
 
 #button-page .notice-page-btn:first-child {
-    background: var(—sub-color01);
+    background: var(--sub-color01);
+}
+
+#button-page .notice-page-btn:first-child a {
+    color: var(--bg-color03);
 }

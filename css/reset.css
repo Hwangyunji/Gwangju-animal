@@ -1,25 +1,38 @@
 /* 초기화 코드 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  table {
-    border-collapse:collapse;
-    border-spacing:0
-  }
-  
-  body {
-    font-size: 100%;
-    font-family: 'Noto Sans KR', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0
+}
+
+body {
+  font-size: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}

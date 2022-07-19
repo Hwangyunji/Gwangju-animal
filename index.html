@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 타이틀(페이지별 변경 필요) -->
+    <title>서초동물사랑센터</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 자바스크립트 -->
+    <script src="./js/app.js"></script>
+</head>
+
+<body id="main">
+    <div class="page">
+        <header id="main-header">
+            <h1>
+                <a href="index.html">
+                    <img src="./images/logo.png" alt="로고">
+                </a>
+            </h1>
+            <nav id="icon-menu">
+                <button id="toggle-btn"><i class="bi bi-list"></i></button>
+            </nav>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="center.html">센터 소개</a></li>
+                    <li><a href="process.html">입양 안내</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">교육</a></li>
+                </ul>
+                <button id="btn-close"><i class="bi bi-x"></i></button>
+            </nav>
+        </header>
+
+        <main>
+            <div class="title">
+                <h1>서초동물사랑센터</h1>
+                <h2>사람과 동물의 조화로운 공존</h2>
+                <a href="notice.html">
+                    <h3>자세히 보기</h3>
+                </a>
+            </div>
+
+            <div class="kakao">
+                <a href="#"><img src="./images/kakao.png" alt="카카오"></a>
+            </div>
+            <div class="protection">
+                <h2>보호동물</h2>
+                <a href="notice.html" class="add-btn">더보기+</a>
+            </div>
+            <div class="swiper">
+                <!-- 필수/추가 UI 구성요소 -->
+                <div class="swiper-wrapper">
+                    <!-- 슬라이더 본체(여기에 이미지 삽입) -->
+                    <div class="swiper-slide">
+                        <a href="detail.html">
+                            <img src="./images/main-dog1.png" alt="dog1">
+                            <p>서울-서초-2022-00055</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="detail.html">
+                            <img src="./images/main-dog2.png" alt="dog2">
+                            <p>서울-서초-2022-00050</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="detail.html">
+                            <img src="./images/main-dog3.png" alt="dog3">
+                            <p>서울-서초-2022-00045</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="detail.html">
+                            <img src="./images/main-dog4.png" alt="dog4">
+                            <p>서울-서초-2022-00032</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="detail.html">
+                            <img src="./images/main-dog5.png" alt="dog5">
+                            <p>서울-서초-2022-00028</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="detail.html">
+                            <img src="./images/main-dog6.png" alt="dog6">
+                            <p>서울-서초-2022-00021</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 좌우 이동 버튼(옵션) -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div><!-- swiper -->
+
+            <a class="main-info" href="tel:02-6956-7980">
+                <img src="./images/main-info.png" alt="이용시간사진">
+            </a>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-sns">
+                <a href="https://www.instagram.com/seocho_animal/"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="footer-menu">
+                <a href="center.html">센터소개 </a><span>|</span>
+                <a href="#">개인정보취급방침 </a><span>|</span>
+                <a href="#">찾아오시는길 </a><span>|</span>
+                <a href="#">동물보호정책</a>
+            </div>
+            <p class="address">주소 : 서울 서초구 양재천로19길 22<br>
+                전화번호 : 02-6956-7981</p>
+            <p class="copy">Copyright © 2019. 서초동물사랑센터. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 타이틀(페이지별 변경 필요) -->
-    <title>입양 절차 - 서초동물사랑센터</title>
+    <title>오시는길 - 서초동물사랑센터</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- icon -->
@@ -17,7 +17,7 @@
     <script src="./js/app.js"></script>
 </head>
 
-<body id="process">
+<body id="map">
     <div class="page">
         <header id="main-header">
             <h1>
@@ -41,52 +41,50 @@
 
         <main>
             <div class="container">
-                <h1>입양 절차</h1>
+                <h1>오시는길</h1>
                 <p>
-                    <a href="process.html">입양 절차</a><span>&emsp;|&emsp;</span>
-                    <a href="notice.html">입양 공고</a><span>&emsp;|&emsp;</span>
-                    <a href="process.html">입양 후 소식</a>
+                    <a href="center.html">센터 소개</a><span>&emsp;|&emsp;</span>
+                    <a href="rule.html">이용 수칙</a><span>&emsp;|&emsp;</span>
+                    <a href="map.html">오시는길</a>
                 </p>
             </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.3387374471195!2d127.03593541566147!3d37.47633207981483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca10b5d836675%3A0x1bbfbc48b01835de!2z7ISc7LSIIOuPmeusvOyCrOuekeyEvO2EsA!5e0!3m2!1sko!2skr!4v1658191542383!5m2!1sko!2skr"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
 
-            <ul>
-                <li class="pink">
-                    <p>서초동물사랑센터 홈페이지에서<br>
-                        입양 가능한 <span>입소견들을 확인</span>합니다.
-                    </p>
-                </li>
-                <i class="bi bi-chevron-down"></i>
-                <li class="gray">
-                    <p>센터에 방문하셔서 <span>설문지 작성 후<br>
-                            상담</span>을 진행합니다.
-                    </p>
-                </li>
-                <i class="bi bi-chevron-down"></i>
-                <li class="pink">
-                    <p>입양하고 싶은 입소견이 있을 경우<br>
-                        <span>최소 3회 이상 방문</span>하여<br>
-                        입양의사를 표현합니다.
-                    </p>
-                </li>
-                <i class="bi bi-chevron-down"></i>
-                <li class="gray">
-                    <p>회의를 거쳐 입양자로 <span>확정</span>된 분은<br>
-                        개별적으로 <span>연락</span>을 드리게 됩니다.
-                    </p>
-                </li>
-                <i class="bi bi-chevron-down"></i>
-                <li class="pink">
-                    <p> <span>입양 전 교육 2회 수료</span> 후<br>
-                        입양서류를 작성합니다.
-                    </p>
-                </li>
-                <i class="bi bi-chevron-down"></i>
-                <li class="gray">
-                    <p>동물 등록 후 입양을 진행하며<br>
-                        <span>입양 후 교육 2회</span>를 수료합니다.
-                    </p>
-                </li>
-            </ul>
+                <div class="info">
+                    <div class="location">
+                        <img src="./images/location-dot.png" alt="">
+                        <h2>주소</h2>
+                        <p>서울특별시 서초구 양재천로 19길 22<br>
+                            (향산빌딩, 서초동물사랑센터)
+                        </p>
+                    </div>
+                    <div class="train-subway">
+                        <img src="./images/train-subway.png" alt="">
+                        <h2>지하철</h2>
+                        <p>양재시민의숲 역(신분당선),<br>
+                            양재역(3호선,신분당선)
+                        </p>
+                    </div>
+                    <div class="bus">
+                        <img src="./images/bus.png" alt="">
+                        <h2>버스</h2>
+                        <p>교육개발원입구(중)(22001),<br>
+                            일동제약(22553),<br>
+                            양재시민의숲(22541)
+                        </p>
+                    </div>
+                    <div class="parking">
+                        <img src="./images/parking.png" alt="">
+                        <h2>주차정보</h2>
+                        <p>양재시민의 숲 공영주차장 이용(유료)</p>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer id="footer">

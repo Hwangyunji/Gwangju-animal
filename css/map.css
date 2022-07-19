@@ -1,0 +1,55 @@
+/* -------------------------center---------------------------- */
+#map {
+    width: 100%;
+}
+#map .container {
+    text-align: center;
+}
+#map .container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--sub-color02);
+    color: var(--bg-color03);
+}
+#map .container p {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+#map .container a {
+    color: var(--text-color);
+}
+#map .container a:last-child {
+    color: var(--sub-color02);
+    font-weight: 700;
+}
+#map .container span {
+    color: var(--bg-color01);
+}
+#map .map .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    gap: 25px;
+}
+#map .map .info img {
+    width: 40px;
+}
+#map .map .info h2 {
+    font-size: 18px;
+    color: #4E88C7;
+    padding-bottom: 5px;
+}
+
+/* hover */
+
+#map .container p a:hover {
+    color: #4E88C7;
+    font-weight: 700;
+}

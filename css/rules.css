@@ -1,0 +1,95 @@
+/* ---------------------rules----------------------- */
+
+/*이용수칙 h1*/
+#rules .container {
+    text-align: center;
+}
+#rules .container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--sub-color02);
+    color: var(--bg-color03);
+}
+
+
+/*카테고리*/
+#rules .container p {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+#rules .container a {
+    color: var(--text-color);
+}
+#rules .container a:nth-child(3) {
+    color: var(--sub-color02);
+    font-weight: 700;
+}
+#rules .container span {
+    color: var(--bg-color01);
+}
+
+#rules .rules img {
+    width: 100%;
+}
+
+/*경고*/
+
+/*경고 상단 텍스트*/
+#rules .warn h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--sub-color02);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*경고 정렬*/
+#rules .warn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rules .warn span {
+    color: var(--sub-color02);
+    font-weight: 700;
+}
+
+#rules .warn p {
+    padding-top: 13px;
+}
+
+/*경고 이미지박스 디테일*/
+#rules .warn-box-01,
+.warn-box-02 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 223px;
+    height: 223px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/*이미지박스 사이 여백*/
+#rules .warn-box-01 {
+    margin-bottom: 20px;
+}
+
+/* hover */
+#rules .container p a:hover {
+    color: #4E88C7;
+    font-weight: 700;
+}
