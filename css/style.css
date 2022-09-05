@@ -143,9 +143,10 @@ button {
 }
 
 /* 서초동물사랑센터 - 리트리버*/
-#main .title {
-    display: flex;
-    flex-direction: column;
+#main .title img{
+    /* display: flex; */
+    width: 100%;
+    /* flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -156,7 +157,7 @@ button {
     background-size: cover;
     background-position: center;
     color: var(--bg-color03);
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
 }
 
 #main main h1 {
@@ -256,14 +257,8 @@ main .title h3 {
     margin: 20px;
     margin-top: 30px;
 }
-#main .main-info h2 {
-    font-size: 20px;
-    font-weight: 700;
-    padding: 20px 0px;
-}
-#main .main-info dl {
-    display: block;
-    outline: 1px solid red;
+#main .main-info img {
+    width: 100%;
 }
 
 /*-----------------------footer--------------------------*/
